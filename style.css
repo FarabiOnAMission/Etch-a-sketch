@@ -12,3 +12,7 @@
     height: 500px;
     margin-top:10px;
 }
+
+.hovered{
+    background-color: black;
+}
