@@ -42,7 +42,7 @@ cont.addEventListener('mouseout',function(e){
     }
 });
 
-cont.addEventListener('mouseover',function(e){
+cont.addEventListener('click',function(e){
     if(e.target.classList.contains('smolBox')){
         let box = e.target;
 
