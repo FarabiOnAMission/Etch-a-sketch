@@ -41,3 +41,21 @@ cont.addEventListener('mouseout',function(e){
         e.target.classList.remove('hovered');
     }
 });
+
+cont.addEventListener('mouseover',function(e){
+    if(e.target.classList.contains('smolBox')){
+        let box = e.target;
+
+        if(box.interactionCount == undefined){
+            box.interactionCount = 0;
+        }
+
+        if(box.interactionCount<10){
+            box.interactionCount++;
+
+            let alpha = box.interactionCount*0.1;
+            box.style.backgroundColor = `rgba(0,0,0,${alpha})`;
+        }
+
+    };
+});
